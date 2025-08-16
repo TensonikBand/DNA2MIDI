@@ -5,7 +5,7 @@
 
 Transform DNA sequences into beautiful ambient soundscapes using music theory and compositional techniques. This system creates 10+ minute structured ambient compositions that map biological features to musical parameters.
 
-## 🎵 Features
+## Features
 
 - **Music Theory-Based**: Uses modal harmony, voice leading, and proper compositional structure
 - **6-Track Ambient Soundscapes**: Each track generated individually with specific roles
@@ -14,7 +14,7 @@ Transform DNA sequences into beautiful ambient soundscapes using music theory an
 - **Long-Form Compositions**: 8-15 minute ambient pieces suitable for meditation and study
 - **Professional Output**: Standard MIDI files compatible with any DAW
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -68,7 +68,7 @@ python examples/modal_comparison.py
 - **ORF Structure** → Large-scale musical form
 - **Purine/Pyrimidine Balance** → Melodic direction
 
-## 📊 Sample Data
+## Sample Data
 
 Included sample sequences:
 - `human_insulin.fasta` - Human insulin gene
@@ -77,7 +77,7 @@ Included sample sequences:
 - `chlorophyll_synth.fasta` - Plant photosynthesis gene
 - `mitochondrial_atp.fasta` - ATP synthase gene
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Research**: Sonification for pattern recognition in genomic data
 - **Education**: Teaching genetics through multisensory experience
@@ -85,7 +85,7 @@ Included sample sequences:
 - **Meditation**: Long-form ambient music for relaxation
 - **Accessibility**: Making genomic data accessible through sound
 
-## 🛠 API Reference
+## API Reference
 
 ### Basic Usage
 
@@ -142,16 +142,7 @@ The system analyzes DNA sequences for:
 
 These biological features are mapped to musical parameters using compositional techniques from ambient music theory.
 
-## 🎵 Examples Gallery
-
-Generated pieces included in `examples/output/`:
-- `ethereal_human_gene.mid` - BRCA1 in A Lydian
-- `dark_viral_atmosphere.mid` - COVID-19 in Eb Phrygian  
-- `warm_chlorophyll.mid` - Photosynthesis in G Mixolydian
-- `cosmic_extremophile.mid` - Tardigrade DNA in F# Locrian
-- `meditative_mitochondrial.mid` - ATP synthesis in C Dorian
-
-## 📚 Research Background
+## Research Background
 
 Based on research in:
 - DNA sonification (Temple, M.D. BMC Bioinformatics 2017)
@@ -159,32 +150,9 @@ Based on research in:
 - Music theory and modal harmony
 - Bioinformatics sequence analysis
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - BioPython community for sequence analysis tools
 - MIDIUtil library for MIDI generation
 - Ambient music pioneers for compositional inspiration
 - Genomics research community for scientific foundation
-
-## 🔗 Links
-
-- [Documentation](docs/)
-- [Examples](examples/)
-- [Research Papers](docs/research.md)
-- [API Reference](docs/api.md)
-
----
-
-*Transform the language of life into the language of music* 🧬 → 🎵
