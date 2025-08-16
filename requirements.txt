@@ -1,0 +1,5 @@
+biopython>=1.79
+MIDIUtil>=1.2.1
+numpy>=1.21.0
+pytest>=7.0.0
+hypothesis>=6.0.0
