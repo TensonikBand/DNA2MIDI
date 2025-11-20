@@ -12,14 +12,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="dna-ambient-composer",
+    name="dna-2-midi",
     version="1.0.0",
-    author="DNA Ambient Composer Team",
-    author_email="contact@dna-ambient-composer.org",
+    author="Tensonik",
+    author_email="63404031+TensonikBand@users.noreply.github.com",
     description="Transform DNA sequences into beautiful ambient soundscapes using music theory",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/DNA-Ambient-Composer",
+    url="https://github.com/TensonikBand/DNA2MIDI",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -49,8 +49,8 @@ setup(
     },
     keywords="dna, bioinformatics, music, ambient, sonification, midi, composition",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/DNA-Ambient-Composer/issues",
-        "Source": "https://github.com/yourusername/DNA-Ambient-Composer",
-        "Documentation": "https://github.com/yourusername/DNA-Ambient-Composer/docs",
+        "Bug Reports": "https://github.com/TensonikBand/DNA2MIDI/issues",
+        "Source": "https://github.com/TensonikBand/DNA2MIDI",
+        "Documentation": "https://github.com/TensonikBand/DNA2MIDI",
     },
 )
