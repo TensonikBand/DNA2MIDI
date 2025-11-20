@@ -51,7 +51,7 @@ python examples/ambient_gallery.py
 python examples/modal_comparison.py
 ```
 
-## 🎼 Musical Structure
+## Musical Structure
 
 ### Track Layout
 - **Track 0**: Bass Foundation (harmonic grounding)
@@ -122,7 +122,7 @@ Options:
   --tracks COUNT           Number of tracks (default: 6)
 ```
 
-## 🎨 Musical Modes Guide
+## Musical Modes Guide
 
 - **Dorian**: Minor with raised 6th - ethereal, balanced, great for human genes
 - **Lydian**: Major with raised 4th - dreamy, floating, perfect for transcendent themes
@@ -131,7 +131,7 @@ Options:
 - **Aeolian**: Natural minor - melancholic, introspective
 - **Ionian**: Major scale - bright, optimistic
 
-## 🧬 Biological Context
+## Biological Context
 
 The system analyzes DNA sequences for:
 - **GC Content**: Ratio of guanine and cytosine bases
