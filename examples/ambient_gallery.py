@@ -36,7 +36,7 @@ def load_sequence(fasta_file: Path) -> str:
 
 def example_1_ethereal_human_gene():
     """Create ethereal ambient from human BRCA1 gene"""
-    print("\n🧬 Example 1: Ethereal Human Gene Soundscape")
+    print("\nExample 1: Ethereal Human Gene Soundscape")
     print("=" * 50)
     
     data_dir = Path(__file__).parent.parent / 'data'
@@ -65,13 +65,13 @@ def example_1_ethereal_human_gene():
     
     output_file = output_dir / "ethereal_brca1.mid"
     midi = composer.create_ambient_soundscape(sequence, str(output_file))
-    print(f"✓ Generated: {output_file}")
+    print(f"Generated: {output_file}")
     print("  Character: Ethereal, floating, transcendent")
 
 
 def example_2_dark_viral_sequence():
     """Create dark ambient from viral sequence"""
-    print("\n🦠 Example 2: Dark Viral Soundscape")
+    print("\nExample 2: Dark Viral Soundscape")
     print("=" * 50)
     
     data_dir = Path(__file__).parent.parent / 'data'
@@ -99,13 +99,13 @@ def example_2_dark_viral_sequence():
     
     output_file = output_dir / "dark_covid_spike.mid"
     midi = composer.create_ambient_soundscape(sequence, str(output_file))
-    print(f"✓ Generated: {output_file}")
+    print(f"Generated: {output_file}")
     print("  Character: Dark, mysterious, unsettling")
 
 
 def example_3_warm_plant_chlorophyll():
     """Create warm ambient from plant photosynthesis genes"""
-    print("\n🌱 Example 3: Warm Chlorophyll Soundscape")
+    print("\nExample 3: Warm Chlorophyll Soundscape")
     print("=" * 50)
     
     data_dir = Path(__file__).parent.parent / 'data'
@@ -133,13 +133,13 @@ def example_3_warm_plant_chlorophyll():
     
     output_file = output_dir / "warm_chlorophyll.mid"
     midi = composer.create_ambient_soundscape(sequence, str(output_file))
-    print(f"✓ Generated: {output_file}")
+    print(f"Generated: {output_file}")
     print("  Character: Warm, grounded, organic growth")
 
 
 def example_4_meditative_mitochondrial():
     """Create meditative ambient from mitochondrial DNA"""
-    print("\n⚡ Example 4: Meditative Mitochondrial Soundscape")
+    print("\nExample 4: Meditative Mitochondrial Soundscape")
     print("=" * 50)
     
     data_dir = Path(__file__).parent.parent / 'data'
@@ -167,13 +167,13 @@ def example_4_meditative_mitochondrial():
     
     output_file = output_dir / "meditative_mitochondrial.mid"
     midi = composer.create_ambient_soundscape(sequence, str(output_file))
-    print(f"✓ Generated: {output_file}")
+    print(f"Generated: {output_file}")
     print("  Character: Meditative, balanced, life-sustaining energy")
 
 
 def example_5_gentle_insulin():
     """Create gentle ambient from human insulin gene"""
-    print("\n🍯 Example 5: Gentle Insulin Soundscape")
+    print("\nExample 5: Gentle Insulin Soundscape")
     print("=" * 50)
     
     data_dir = Path(__file__).parent.parent / 'data'
@@ -201,13 +201,13 @@ def example_5_gentle_insulin():
     
     output_file = output_dir / "gentle_insulin.mid"
     midi = composer.create_ambient_soundscape(sequence, str(output_file))
-    print(f"✓ Generated: {output_file}")
+    print(f"Generated: {output_file}")
     print("  Character: Gentle, nurturing, regulatory balance")
 
 
 def generate_all_examples():
     """Generate all example compositions"""
-    print("🎵 DNA Ambient Composition Gallery")
+    print("DNA Ambient Composition Gallery")
     print("Creating ambient soundscapes from biological sequences...")
     print("=" * 60)
     
@@ -228,10 +228,10 @@ def generate_all_examples():
     output_dir = Path(__file__).parent / 'output'
     midi_files = list(output_dir.glob("*.mid"))
     
-    print(f"\n✅ Gallery Complete! Generated {len(midi_files)} ambient compositions")
+    print(f"\nGallery Complete! Generated {len(midi_files)} ambient compositions")
     print("\nGenerated Files:")
     for file in sorted(midi_files):
-        print(f"  🎼 {file.name}")
+        print(f"  {file.name}")
     
     print(f"\nFiles saved to: {output_dir}")
     print("\n🎧 Open these MIDI files in your favorite DAW or music player")
@@ -249,7 +249,7 @@ def main():
         ("Generate All Examples", generate_all_examples)
     ]
     
-    print("🧬 DNA Ambient Composition Gallery 🎵")
+    print("DNA Ambient Composition Gallery")
     print("=" * 40)
     print("Transform biological sequences into ambient soundscapes")
     print("\nAvailable compositions:")
@@ -264,7 +264,7 @@ def main():
             choice = int(choice)
             
             if choice == 0:
-                print("🎵 Thank you for exploring DNA ambient composition!")
+                print("Thank you for exploring DNA ambient composition!")
                 break
             elif 1 <= choice <= len(examples):
                 examples[choice - 1][1]()
@@ -272,7 +272,7 @@ def main():
                 print("Invalid choice. Please try again.")
                 
         except KeyboardInterrupt:
-            print("\n🎵 Goodbye!")
+            print("\nGoodbye!")
             break
         except ValueError:
             print("Please enter a valid number.")

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 DNA Ambient Composer - Quick Start
-Generate your first ambient composition in 30 seconds!
 """
 
 import os
@@ -14,9 +13,9 @@ sys.path.insert(0, str(Path(__file__).parent / 'src'))
 try:
     from ambient_composer import DNAAmbientComposer, AmbientConfig
     from sequence_analyzer import SequenceAnalyzer
-    print("✓ DNA Ambient Composer modules loaded successfully")
+    print("DNA Ambient Composer modules loaded successfully")
 except ImportError as e:
-    print(f"❌ Import error: {e}")
+    print(f"Import error: {e}")
     print("\nPlease install requirements first:")
     print("pip install -r requirements.txt")
     sys.exit(1)
@@ -63,8 +62,8 @@ def quick_demo():
     output_file = "quickstart_demo.mid"
     midi = composer.create_ambient_soundscape(sample_sequence, output_file)
     
-    print(f"\n✅ Success! Generated: {output_file}")
-    print("\n🎵 Track Structure:")
+    print(f"\nSuccess! Generated: {output_file}")
+    print("\nTrack Structure:")
     print("Track 0: Bass Foundation")
     print("Track 1: Harmonic Pad") 
     print("Track 2: Lead Melody")
@@ -80,7 +79,7 @@ def quick_demo():
 
 def interactive_composer():
     """Interactive composition tool"""
-    print("\n🎼 Interactive Ambient Composer")
+    print("\nInteractive Ambient Composer")
     print("=" * 35)
     
     # Get user preferences
@@ -163,7 +162,7 @@ def interactive_composer():
     )
     
     # Generate composition
-    print(f"\n🧬 Generating ambient composition...")
+    print(f"\nGenerating ambient composition...")
     print(f"DNA: {seq_desc} ({len(sequence)} bp)")
     print(f"Music: {key} {mode_name} at {tempo} BPM")
     print(f"Duration: {duration} minutes")
@@ -173,17 +172,17 @@ def interactive_composer():
     
     try:
         midi = composer.create_ambient_soundscape(sequence, output_file)
-        print(f"\n✅ Generated: {output_file}")
+        print(f"\nGenerated: {output_file}")
         print(f"Character: {mode_desc}")
         return output_file
     except Exception as e:
-        print(f"❌ Error generating composition: {e}")
+        print(f"Error generating composition: {e}")
         return None
 
 
 def main():
     """Main quickstart interface"""
-    print("🧬➡️🎵 DNA Ambient Composer")
+    print("DNA Ambient Composer")
     print("Transform biological sequences into ambient soundscapes")
     print("=" * 55)
     

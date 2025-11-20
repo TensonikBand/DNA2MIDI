@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Modal Comparison Suite
-Demonstrate how different musical modes affect the same DNA sequence
+Demonstrates how different musical modes affect the same DNA sequence
 """
 
 import os
@@ -18,7 +18,7 @@ from Bio import SeqIO
 
 def create_modal_comparison():
     """Create the same DNA sequence in different musical modes"""
-    print("🎼 Modal Comparison Suite")
+    print("Modal Comparison Suite")
     print("=" * 40)
     print("Same DNA sequence, different musical characters")
     
@@ -82,7 +82,7 @@ def create_modal_comparison():
     print("-" * 50)
     
     for mode_name, mode_info in modes.items():
-        print(f"\n🎵 {mode_name.title()} Mode ({mode_info['key']} {mode_name})")
+        print(f"\n{mode_name.title()} Mode ({mode_info['key']} {mode_name})")
         print(f"   Character: {mode_info['character']}")
         print(f"   Theory: {mode_info['description']}")
         
@@ -102,25 +102,25 @@ def create_modal_comparison():
         try:
             midi = composer.create_ambient_soundscape(sequence, str(output_file))
             generated_files.append(output_file)
-            print(f"   ✓ Generated: {output_file.name}")
+            print(f"   Generated: {output_file.name}")
         except Exception as e:
-            print(f"   ❌ Error: {e}")
+            print(f"   Error: {e}")
     
     # Summary
-    print(f"\n✅ Modal Comparison Complete!")
+    print(f"\nModal Comparison Complete!")
     print(f"Generated {len(generated_files)} compositions from the same DNA sequence")
     print(f"\nFiles saved to: {output_dir}")
     
-    print(f"\n🎧 Listening Guide:")
+    print(f"\nListening Guide:")
     print("=" * 30)
     for mode_name, mode_info in modes.items():
         filename = f"insulin_{mode_name}_{mode_info['key']}.mid"
-        print(f"🎼 {filename}")
+        print(f" {filename}")
         print(f"   Listen for: {mode_info['character']}")
         print(f"   Key feeling: {mode_info['description']}")
         print()
     
-    print("💡 Notice how the same biological data creates completely different")
+    print("Notice how the same biological data creates completely different")
     print("   emotional experiences through different musical modes!")
     
     return generated_files
@@ -128,7 +128,7 @@ def create_modal_comparison():
 
 def create_key_comparison():
     """Create the same mode in different keys"""
-    print("\n🗝️  Key Comparison Suite")
+    print("\nKey Comparison Suite")
     print("=" * 40)
     print("Same mode (Dorian), different keys")
     
@@ -162,7 +162,7 @@ def create_key_comparison():
     print("-" * 40)
     
     for key in keys:
-        print(f"\n🎵 {key} Dorian")
+        print(f"\n{key} Dorian")
         print(f"   Character: {key_descriptions[key]}")
         
         config = AmbientConfig(
@@ -179,11 +179,11 @@ def create_key_comparison():
         try:
             midi = composer.create_ambient_soundscape(sequence, str(output_file))
             generated_files.append(output_file)
-            print(f"   ✓ Generated: {output_file.name}")
+            print(f"   Generated: {output_file.name}")
         except Exception as e:
-            print(f"   ❌ Error: {e}")
+            print(f"   Error: {e}")
     
-    print(f"\n✅ Key Comparison Complete!")
+    print(f"\nKey Comparison Complete!")
     print(f"Generated {len(generated_files)} compositions in different keys")
     print(f"Files saved to: {output_dir}")
     
@@ -192,7 +192,7 @@ def create_key_comparison():
 
 def main():
     """Main comparison suite"""
-    print("🧬➡️🎵 DNA Musical Mode & Key Comparison")
+    print("DNA Musical Mode & Key Comparison")
     print("=" * 50)
     print("Explore how music theory transforms the same biological data")
     
@@ -213,13 +213,13 @@ def main():
             choice = int(choice)
             
             if choice == 0:
-                print("🎵 Comparison complete!")
+                print("Comparison complete!")
                 break
             elif 1 <= choice <= len(options):
                 result = options[choice - 1][1]()
                 
                 if choice == 3:  # Both suites
-                    print("\n🎊 Both comparison suites generated!")
+                    print("\nBoth comparison suites generated!")
                     print("Explore how the same DNA creates different musical experiences")
                     print("through the lens of music theory!")
                 
@@ -228,7 +228,7 @@ def main():
                 print("Invalid choice. Please try again.")
                 
         except KeyboardInterrupt:
-            print("\n🎵 Goodbye!")
+            print("\nGoodbye!")
             break
         except ValueError:
             print("Please enter a valid number.")
